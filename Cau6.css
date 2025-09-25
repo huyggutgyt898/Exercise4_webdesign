@@ -1,0 +1,38 @@
+table,th,td{
+    width:100%;
+    border: 1px solid red;
+    border-collapse:collapse;
+}
+img{
+    width: 150px;
+}
+.headline{
+    color:rgb(255, 255, 255);
+    background-color: red;
+    text-align:right;
+    font-size: large;
+}
+.p1{
+    color:red;
+    font-weight: bold;
+    background-color: lightpink;
+    font-size: 30px;
+}
+.p2{
+    margin-left: -40px;
+    color:red;
+    font-weight: bold;
+}
+ul{
+    list-style-type:disc;
+}
+ol{
+    list-style-type:decimal;
+}
+td.two{
+    width:50%;
+    
+}
+li{
+    margin-left: 20px;
+}

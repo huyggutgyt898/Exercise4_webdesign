@@ -1,0 +1,15 @@
+.title {
+  color: red;
+  text-align: center;
+  margin-bottom: -10px;
+}
+a{
+  color:blue;
+}
+.title:first-of-type {
+  margin-bottom: -20px;
+}
+
+.contact {
+  text-align: center;
+}
