@@ -5,24 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài 7</title>
     <style>
-        h1, th, p{
+        /* Căn giữa chữ trong ô dữ liệu và có đường viền màu đỏ */
+        button, tr, td{
             text-align: center;
-            border: 2px solid red;
+            border: 2px solid rgb(226, 81, 81);
+            margin: 0 auto;
+        }
+
+        /* Gộp các đường viền thànnh nét liền mach */
+        table{
+            border-collapse: collapse;
+        }
+
+        /* Căn bảng ở giữa màn hình trình duyệt với khích thước bảng giới hạn */
+        table.login{
+            margin: 100px auto auto;
+            width: 300px;
+        }
+
+        /* Thay đổi màu sắc trong ô dữ liêu*/
+        td{
+            background-color: rgb(151, 233, 222);
+        }
+
+        th{
+            height: 50px;
+            color: rgb(201, 13, 13);
+            font-size: 24px;
         }
     </style>
 </head>
 <body>
-    <table>
+    <table class="login">
+        <thead>
+            <th colspan="2">Đăng nhập</th>
+        </thead>
+
+       <tbody>
         <tr>
-            <h1>Đăng nhập</h1>
-            <th>
-                <p>Mã người dùng</p>
-            </th>
-            <th>
-                <input type="text">
-            </th>
+            <td>Mã người dùng</td>
+            <td><input type="text" id="user"></td>
         </tr>
+        <tr>
+            <td>Mật khẩu</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td colspan="2" onclick="login()"><button type="submit">Đồng ý</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><div id="result"></div></td>
+        </tr>
+       </tbody>
         
     </table>
+
+    <script>
+        function login(){
+            var user = document.getElementById("user").value;  // Láy dữ liệu
+            document.getElementById("result").innerHTML = user; // Hiển thị dữ liệu dựa theo id
+        }
+    </script>
 </body>
 </html>
